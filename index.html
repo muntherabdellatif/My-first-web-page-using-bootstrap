@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <!-- Required meta tags -->
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
@@ -20,8 +25,49 @@
 </head>
 
 <body>
-
+    <!-- start nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark  p-5">
+        <div class="container">
+            <a class="navbar-brand fs-1" href="#">TinDog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link mb-4" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item mb-4">
+                        <a class="nav-link" href="#">Download</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- end nav bar -->
+    <!-- start landing  -->
+    <div class="landing  pb-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 col-sm-12">
+                    <h1 class="text-white mb-4">Meet new and interesting <br> dogs nearby.</h1>
+                    <button type="button" class="btn btn-dark mx-3  mt-5 btn-lg">
+                        <i class="fab fa-apple"></i> Dawnload</button>
+                    <button type="button" class="btn btn-outline-light  mt-5 btn-lg">
+                        <i class="fab fa-google-play"></i>Dawnload</button>
+                </div>
+                <div class="col-lg-6 col-sm-12 mt-5">
+                    <img src="img/iphone6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end landing  -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

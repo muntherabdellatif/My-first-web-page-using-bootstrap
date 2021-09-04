@@ -1,14 +1,29 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 @media (min-width:992px) {
     .container {
         max-width: 1064px;
     }
 }
+p {
+    color: #8f8f8f;
+}
 /* start nav  */
 .navbar {
     background-color: #ff4c68 ;
+    padding: 4.5rem 0;
+}
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0px 18px;
+}
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat";
 }
 .navbar-collapse {
     flex-grow:initial;
@@ -24,30 +39,130 @@ body {
 .landing {
     background-color: #ff4c68 ;
 }
-
 h1 {
-    font-size: 3rem;
+    text-align: center;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     line-height: 1.5;
 }
 .landing .container .row .col-lg-6  img {
-    max-width: 300px;
+    max-width: 60%;
     margin: auto;
     display: block;
 }
+.bootstrap-button {
+    margin: 5px;
+}
 @media (min-width:992px) {
-    .landing .container .row .col-lg-6  img {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
+    h1 {
+        font-size: 3rem;
+       text-align: start;
     }
+    .bootstrap-button {
+        margin: 5% 3% 5% 0%;
+    }
+    .landing .container .row .col-lg-6  img {
+        position: relative;
+        top: 20px;
+        transform: rotate(25deg);
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+}
     .landing {
         height: 500px;
         overflow: hidden;
     }
 }
 /* end landing  */
-
+/* start icon section  */
+.icon-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.icon-section .row > div {
+    padding: 47px;
+}
+.icon-section i {
+    margin-bottom: 20px;
+    color: rgba(255, 0, 0, 0.493);
+    font-size: 80px;
+    text-align: center;
+    display: block;
+}
+.icon-section i:hover {
+    color:  #ff4c68 ;
+}
+.icon-section h2 {
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+}
+.icon-section p {
+    text-align: center;
+}
+/* end icon section  */
+/* start carousel section  */
+.carousel-section {
+    background-color: #ff4c68;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.carousel-section .person {
+    display: block;
+    margin: 0 auto 50px;
+    width: fit-content;
+}
+.carousel-section .person img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 100px;
+    margin: auto;
+}
+.carousel-section .person p {
+    color: white;
+    float: right;
+    margin-top: 39px;
+    margin-left: 20px;
+    font-size: 12px;
+}
+.carousel-section .container {
+    padding: 50px;
+}
+.carousel-section .carousel-item > p {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+@media (min-width:992px) {
+    .carousel-section .carousel-item > p {
+        font-size: 30px;
+    }
+    .carousel-section .person p {
+        font-size: 16px;
+    }
+}
+.carousel-img-section  {
+    margin-top: 50px;
+}
+.carousel-img {
+    width: 100%;
+}
+/* end carousel section  */
+/* start price section  */
+.price {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.price h2 {
+    text-align: center;
+    font-weight: bold;
+}
+.price p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/* end price section  */

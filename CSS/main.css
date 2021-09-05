@@ -1,3 +1,8 @@
+:root {
+    --background-color : #ff4c68  ;
+    --main-padding : 100px ;
+    --padding-2 : 50px ;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -6,12 +11,19 @@ body {
         max-width: 1064px;
     }
 }
-p {
+/* color */
+.colored-section {
+    background-color: var(--background-color);
+    color: white;
+}
+.white-section {
+    background-color:white ;
+}
+.white-section p {
     color: #8f8f8f;
 }
 /* start nav  */
 .navbar {
-    background-color: #ff4c68 ;
     padding: 2rem 0;
 }
 .navbar-brand {
@@ -39,9 +51,6 @@ p {
 }
 /* end nav  */
 /* start landing  */
-.landing {
-    background-color: #ff4c68 ;
-}
 h1 {
     text-align: center;
     font-size: 2rem;
@@ -82,10 +91,10 @@ h1 {
 /* end landing  */
 /* start icon section  */
 .icon-section {
-    background-color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
     position: relative;
+    text-align: center;
 }
 .icon-section .row > div {
     padding: 10px 47px;
@@ -94,24 +103,19 @@ h1 {
     margin-bottom: 20px;
     color: rgba(255, 0, 0, 0.493);
     font-size: 80px;
-    text-align: center;
     display: block;
 }
 .icon-section i:hover {
-    color:  #ff4c68 ;
+    color:  var(--background-color) ;
 }
 .icon-section h2 {
-    text-align: center;
     font-size: 27px;
     font-weight: bold;
 }
-.icon-section p {
-    text-align: center;
-}
 @media (min-width:992px) {
     .icon-section {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: var(--main-padding);
+        padding-bottom: var(--main-padding);
     }
     .icon-section .row > div {
         padding: 47px;
@@ -119,9 +123,6 @@ h1 {
 }
 /* end icon section  */
 /* start carousel section  */
-.carousel-section {
-    background-color: #ff4c68;
-}
 .carousel-section .person {
     display: block;
     margin: 0 auto 50px;
@@ -138,14 +139,12 @@ h1 {
     margin: auto;
 }
 .carousel-section .person p {
-    color: white;
     float: right;
     margin-top: 18px;
     margin-left: 20px;
     font-size: 9px;
 }
 .carousel-section .carousel-item > p {
-    color: white;
     float: right;
     margin-top: 18px;
     margin-left: 20px;
@@ -200,13 +199,14 @@ h1 {
 /* end carousel section  */
 /* start price section  */
 .price {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-2);
 }
 .price .card {
     width: 80%;
     display: block;
     margin: auto;
+    text-align: center;
 }
 @media (min-width:768px) {
     .price .card {
@@ -220,12 +220,6 @@ h1 {
     .price .card {
          width: 93%;
     }
-}
-.price h2 , 
-.price p ,
-.price h5 ,
-.price .card-header {
-    text-align: center;
 }
 .price h2 {
     font-weight: bold;
@@ -252,21 +246,18 @@ h1 {
     margin: auto;
 }
 .price .card-body {
-    background-color: white;
     padding: 20px;
 }
 /* end price section  */
 /* start download section  */
  .download {
-    background-color: #ff4c68;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: var(--padding-2);
+    padding-bottom: var(--padding-2);
     text-align: center;
  }
  .download p {
     font-size: 30px;
     font-weight: bold;
-    color: white;
     padding-bottom: 20px;
 }
 .download button {
